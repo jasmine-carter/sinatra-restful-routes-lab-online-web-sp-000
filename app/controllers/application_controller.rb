@@ -20,6 +20,7 @@ class ApplicationController < Sinatra::Base
     erb :new_recipe
   end
 
+  #receives params from form, creates new recipe, and directs user to show page to see recipe
   post '/recipes' do
     @recipe = Recipe.create(params[:recipe])
     redirect "/recipes/#{Recipe.last.id}"
