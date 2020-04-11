@@ -4,10 +4,12 @@ class ApplicationController < Sinatra::Base
     set :views, 'app/views'
   end
 
+  #redirects to index
   get '/' do
     redirect '/recipes'
   end
-  # code actions here!
+
+  #index action
   get '/recipes' do
     erb :index
   end
