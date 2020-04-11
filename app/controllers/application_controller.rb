@@ -20,9 +20,14 @@ class ApplicationController < Sinatra::Base
     erb :new_recipe
   end
 
+  post '/recipes' do
+    @recipe = Recipe.create(params)
+    redirect "/recipes/#{recipe.id}"
+  end
+  
   #show specific recipe
   post '/recipes/:id' do
-    #will show a newly created recipe OR recipe of a specific id
+  
   end
 
 end
