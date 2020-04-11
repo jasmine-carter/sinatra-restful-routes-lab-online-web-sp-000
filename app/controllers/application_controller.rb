@@ -19,4 +19,10 @@ class ApplicationController < Sinatra::Base
   get '/recipes/new' do
     erb :new_recipe
   end
+
+  #show specific recipe
+  post '/recipes/:id' do
+    #will show a newly created recipe OR recipe of a specific id
+  end
+
 end
