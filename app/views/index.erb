@@ -1,0 +1,7 @@
+<h1>Recipes Index</h1>
+
+<% Recipe.each do |r|%>
+  <h4> <%= "#{r.name}"%></h4>
+  <p> <%= "#{r.ingredients}" %> </p>
+  <p><%= "#{r.cook_time}" %></p>
+  <%end%>
