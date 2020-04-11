@@ -44,5 +44,5 @@ class ApplicationController < Sinatra::Base
     Recipe.destroy(params[:id])
     redirects '/articles'
   end
-  
+
 end
